@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -230,8 +231,12 @@ public class LoginActivity extends Activity {
 			showProgress(false);
 
 			if (success) {
-				//Toast.makeText(getApplicationContext(), "Logged In Successfully", Toast.LENGTH_LONG).show();
+				
+				Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+			
+				startActivity(mainActivity);
 				finish();
+				
 			} else {
 				mPasswordView
 						.setError(getString(R.string.error_incorrect_password));

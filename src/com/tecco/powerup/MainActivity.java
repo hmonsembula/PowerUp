@@ -86,10 +86,16 @@ public class MainActivity extends FragmentActivity {
 		FragmentTransaction ft = fm.beginTransaction();
 		Fragment fragment = null;
 
-		if (selectedItem.compareTo("Layout 1") == 0) {
+		if (selectedItem.compareTo("E-Vendors") == 0) {
 			fragment = new Vendors();
-		} else if (selectedItem.compareTo("Layout 2") == 0) {
+		} else if (selectedItem.compareTo("E-Balance") == 0) {
+			fragment = new Balance();
+		} else if (selectedItem.compareTo("Load Shedding Schedule") == 0) {
 			fragment = new LoadShedding();
+		} else if (selectedItem.compareTo("Notifications") == 0) {
+			fragment = new Notifications();
+		} else if (selectedItem.compareTo("Report a fault") == 0) {
+			fragment = new FaultReport();
 		}
 
 		if (fragment != null) {

@@ -24,7 +24,7 @@
         </activity>
         <activity
             android:name="com.tecco.powerup.MainActivity"
-            android:label="@string/title_activity_login"
+            android:label="@string/main_activity"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
     </application>

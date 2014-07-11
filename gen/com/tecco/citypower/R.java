@@ -43,8 +43,11 @@ public final class R {
     public static final class layout {
         public static final int activity_login=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int fragment_load_shedding=0x7f030002;
-        public static final int fragment_vendors=0x7f030003;
+        public static final int fragment_balance=0x7f030002;
+        public static final int fragment_fault_report=0x7f030003;
+        public static final int fragment_load_shedding=0x7f030004;
+        public static final int fragment_notifications=0x7f030005;
+        public static final int fragment_vendors=0x7f030006;
     }
     public static final class menu {
         public static final int login=0x7f080000;
@@ -63,6 +66,7 @@ public final class R {
         public static final int error_invalid_password=0x7f06000c;
         public static final int hello_world=0x7f060002;
         public static final int login_progress_signing_in=0x7f06000a;
+        public static final int main_activity=0x7f06000f;
         /**  Strings related to login 
          */
         public static final int prompt_email=0x7f060004;
