@@ -16,3 +16,4 @@ public class Balance extends Fragment {
 		return view;
 	}
 }
+

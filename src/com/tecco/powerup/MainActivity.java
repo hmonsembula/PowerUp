@@ -1,5 +1,7 @@
 package com.tecco.powerup;
 
+import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -14,6 +16,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
+
 import com.tecco.citypower.R;
 
 public class MainActivity extends FragmentActivity {
@@ -31,10 +34,12 @@ public class MainActivity extends FragmentActivity {
 				R.layout.activity_main, null);
 		setContentView(mLayout);
 
+		
 		lvMenuItems = getResources().getStringArray(R.array.menu_items);
 		lvMenu = (ListView) findViewById(R.id.menu_listview);
 		lvMenu.setAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, lvMenuItems));
+
 		lvMenu.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
@@ -54,12 +59,12 @@ public class MainActivity extends FragmentActivity {
 		});
 
 		tvTitle = (TextView) findViewById(R.id.activity_main_content_title);
-
 		FragmentManager fm = MainActivity.this.getSupportFragmentManager();
 		FragmentTransaction ft = fm.beginTransaction();
 		Vendors fragment = new Vendors();
 		ft.add(R.id.activity_main_content_fragment, fragment);
 		ft.commit();
+	
 
 	}
 
@@ -102,6 +107,7 @@ public class MainActivity extends FragmentActivity {
 			ft.replace(R.id.activity_main_content_fragment, fragment);
 			ft.commit();
 			tvTitle.setText(selectedItem);
+			
 		}
 		mLayout.toggleMenu();
 	}

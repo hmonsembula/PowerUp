@@ -10,10 +10,10 @@
 
         <ListView
             android:id="@+id/menu_listview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_purple"
-            android:cacheColorHint="#00000000" >
+           	android:background="#989898"
+           >
         </ListView>
     </LinearLayout>
 
@@ -27,20 +27,21 @@
         <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:background="@android:color/darker_gray"
+	        android:background="@drawable/top_menu_bar"
 	        android:orientation="horizontal" >
             
             <Button
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
+	            android:layout_height="48dp"
+	            android:layout_width="48dp"
 	            android:onClick="toggleMenu"
-	            android:text="Menu"
+	            android:background="@drawable/menu_button"
 	            android:id="@+id/button_menu" />
             
             <TextView
 			     android:layout_width="0dp"
 			     android:layout_height="wrap_content"
-			     android:text="Main"
+			     android:text="E-Vendors"
+			     android:textStyle="bold"
 			     android:gravity="center"
 			     android:id="@+id/activity_main_content_title"
 			     android:layout_weight="1" />
@@ -52,7 +53,7 @@
 		    android:id="@+id/activity_main_content_fragment"
 		    android:layout_width="match_parent"
 		    android:layout_height="match_parent" >
-        
+       
     	</FrameLayout>
         
     </LinearLayout>

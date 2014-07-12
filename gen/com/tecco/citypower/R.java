@@ -10,6 +10,10 @@ package com.tecco.citypower;
 public final class R {
     public static final class array {
         public static final int menu_items=0x7f050000;
+        /**  Nav Drawer List Item Icons 
+ Keep them in order as the titles are in 
+         */
+        public static final int nav_drawer_icons=0x7f050001;
     }
     public static final class attr {
     }
@@ -22,23 +26,58 @@ public final class R {
         public static final int activity_horizontal_margin=0x7f040000;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int area_dropdown=0x7f020000;
+        public static final int area_textbox=0x7f020001;
+        public static final int balance_text=0x7f020002;
+        public static final int description_textbox=0x7f020003;
+        public static final int ebalance_menu_bar_text=0x7f020004;
+        public static final int email_address_textbox=0x7f020005;
+        public static final int forgot_username_and_password=0x7f020006;
+        public static final int forgot_username_and_password_text=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int login_button=0x7f020009;
+        public static final int login_header_ext=0x7f02000a;
+        public static final int login_to_your_account_text=0x7f02000b;
+        public static final int menu_button=0x7f02000c;
+        public static final int password_icon=0x7f02000d;
+        public static final int password_textbox=0x7f02000e;
+        public static final int password_textbox_2=0x7f02000f;
+        public static final int recharge_button=0x7f020010;
+        public static final int register_button=0x7f020011;
+        public static final int register_button_2=0x7f020012;
+        public static final int send_button=0x7f020013;
+        public static final int slide_background=0x7f020014;
+        public static final int text_enter_your_details_below=0x7f020015;
+        public static final int top_bar=0x7f020016;
+        public static final int top_bar_2=0x7f020017;
+        public static final int top_menu_bar=0x7f020018;
+        public static final int username_icon=0x7f020019;
+        public static final int username_textbox=0x7f02001a;
+        public static final int username_textbox_2=0x7f02001b;
+        public static final int username_textbox_only=0x7f02001c;
     }
     public static final class id {
-        public static final int action_forgot_password=0x7f09000c;
-        public static final int action_settings=0x7f09000d;
+        public static final int action_forgot_password=0x7f090013;
+        public static final int action_settings=0x7f090014;
         public static final int activity_main_content_fragment=0x7f09000b;
         public static final int activity_main_content_title=0x7f09000a;
+        public static final int button1=0x7f09000d;
         public static final int button_menu=0x7f090009;
+        public static final int editText1=0x7f09000e;
+        public static final int editText2=0x7f090012;
         public static final int email=0x7f090003;
+        public static final int expandableListView1=0x7f09000f;
+        public static final int expandableListView2=0x7f090010;
+        public static final int expandableListView3=0x7f090011;
         public static final int login=0x7f090005;
         public static final int login_form=0x7f090002;
         public static final int login_status=0x7f090000;
         public static final int login_status_message=0x7f090001;
         public static final int menu_listview=0x7f090008;
         public static final int password=0x7f090004;
-        public static final int register_button=0x7f090007;
-        public static final int sign_in_button=0x7f090006;
+        public static final int register_button=0x7f090006;
+        public static final int sign_in_button=0x7f090007;
+        public static final int textView1=0x7f09000c;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
