@@ -57,8 +57,8 @@ public final class R {
         public static final int username_textbox_only=0x7f02001c;
     }
     public static final class id {
-        public static final int action_forgot_password=0x7f090013;
-        public static final int action_settings=0x7f090014;
+        public static final int action_forgot_password=0x7f090014;
+        public static final int action_settings=0x7f090015;
         public static final int activity_main_content_fragment=0x7f09000b;
         public static final int activity_main_content_title=0x7f09000a;
         public static final int button1=0x7f09000d;
@@ -73,6 +73,7 @@ public final class R {
         public static final int login_form=0x7f090002;
         public static final int login_status=0x7f090000;
         public static final int login_status_message=0x7f090001;
+        public static final int map=0x7f090013;
         public static final int menu_listview=0x7f090008;
         public static final int password=0x7f090004;
         public static final int register_button=0x7f090006;
@@ -87,6 +88,7 @@ public final class R {
         public static final int fragment_load_shedding=0x7f030004;
         public static final int fragment_notifications=0x7f030005;
         public static final int fragment_vendors=0x7f030006;
+        public static final int mapfragment=0x7f030007;
     }
     public static final class menu {
         public static final int login=0x7f080000;
