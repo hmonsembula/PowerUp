@@ -1,5 +1,6 @@
 package com.tecco.powerup;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -9,15 +10,15 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
-import com.tecco.citypower.R;
 
 public class MainActivity extends FragmentActivity {
 
+	public static android.support.v4.app.FragmentManager fragmentManager;
 	MainLayout mLayout;
 	private ListView lvMenu;
 	private String[] lvMenuItems;
@@ -31,6 +32,7 @@ public class MainActivity extends FragmentActivity {
 				R.layout.activity_main, null);
 		setContentView(mLayout);
 
+		fragmentManager = getSupportFragmentManager();
 		lvMenuItems = getResources().getStringArray(R.array.menu_items);
 		lvMenu = (ListView) findViewById(R.id.menu_listview);
 		lvMenu.setAdapter(new ArrayAdapter<String>(this,
@@ -58,7 +60,6 @@ public class MainActivity extends FragmentActivity {
 		FragmentManager fm = MainActivity.this.getSupportFragmentManager();
 		FragmentTransaction ft = fm.beginTransaction();
 		Vendors fragment = new Vendors();
-		ft.add(R.id.activity_main_content_fragment, fragment);
 		ft.commit();
 
 	}
@@ -86,22 +87,28 @@ public class MainActivity extends FragmentActivity {
 		FragmentTransaction ft = fm.beginTransaction();
 		Fragment fragment = null;
 
-		if (selectedItem.compareTo("E-Vendors") == 0) {
-			fragment = new Vendors();
-		} else if (selectedItem.compareTo("E-Balance") == 0) {
-			fragment = new Balance();
-		} else if (selectedItem.compareTo("Load Shedding Schedule") == 0) {
-			fragment = new LoadShedding();
-		} else if (selectedItem.compareTo("Notifications") == 0) {
-			fragment = new Notifications();
-		} else if (selectedItem.compareTo("Report a fault") == 0) {
-			fragment = new FaultReport();
-		}
+		Intent intent = null;
 
-		if (fragment != null) {
-			ft.replace(R.id.activity_main_content_fragment, fragment);
-			ft.commit();
-			tvTitle.setText(selectedItem);
+		if (selectedItem.compareTo("E-Vendors") == 0) {
+			intent = new Intent(this, Vendors.class);
+			startActivity(intent);
+		} else {
+
+			if (selectedItem.compareTo("E-Balance") == 0) {
+				fragment = new Balance();
+			} else if (selectedItem.compareTo("Load Shedding Schedule") == 0) {
+				fragment = new LoadShedding();
+			} else if (selectedItem.compareTo("Notifications") == 0) {
+				fragment = new Notifications();
+			} else if (selectedItem.compareTo("Report a fault") == 0) {
+				fragment = new FaultReport();
+			}
+
+			if (fragment != null) {
+				ft.replace(R.id.activity_main_content_fragment, fragment);
+				ft.commit();
+				tvTitle.setText(selectedItem);
+			}
 		}
 		mLayout.toggleMenu();
 	}
