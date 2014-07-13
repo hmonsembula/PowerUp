@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="menu_items">
-        <item >E-Vendors</item>
         <item >E-Balance</item>
         <item >Load Shedding Schedule</item>       
         <item >Notifications</item>
+        <item >E-Vendors</item>
         <item >Report a fault</item>
     </string-array>
     
