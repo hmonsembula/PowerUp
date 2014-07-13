@@ -5,7 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.tecco.citypower.R;
+
+import com.tecco.powerup.R;
 
 public class LoadShedding extends Fragment {
 

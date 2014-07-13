@@ -17,7 +17,7 @@ import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
 
-import com.tecco.citypower.R;
+import com.tecco.powerup.R;
 
 public class MainActivity extends FragmentActivity {
 
