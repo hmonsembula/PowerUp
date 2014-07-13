@@ -233,6 +233,7 @@ public class LoginActivity extends Activity {
 			if (success) {
 				
 				Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+				
 			
 				startActivity(mainActivity);
 				finish();
