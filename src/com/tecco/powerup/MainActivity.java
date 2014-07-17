@@ -28,7 +28,7 @@ public class MainActivity extends FragmentActivity {
 	Button btMenu;
 	TextView tvTitle;
 
-	@Override
+	@Override 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mLayout = (MainLayout) this.getLayoutInflater().inflate(

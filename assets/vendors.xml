@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" >     
+<merchant>
+    <name>Forty Fifth Avenue Supermarket CC</name>
+    <telNumber>011 672 8807</telNumber>
+	<latitude>-26.17629</latitude>
+	<longitude>27.91219</longitude>
+	<address>40, 5th Ave, Florida </address>
+</merchant>
+
+<merchant>
+    <name>BP Express Bergbron</name>
+    <telNumber>011 477 7601</telNumber>
+	<latitude>-26.1639881</latitude>
+	<longitude>27.9512218</longitude>
+	<address>Cnr Gordon Road &amp; Bergbron Drive, Roodepoot</address>
+</merchant>
+
+<merchant>
+    <name>Shell Founders Service Station</name>
+    <telNumber>011 472 2001</telNumber>
+	<latitude>-26.1688297</latitude>
+	<longitude>27.9310951</longitude>
+	<address>1 Gordon Rd, cnr Ontdekker Rd, Florida North</address>
+</merchant>
+
+<merchant>
+    <name>Sasol Mozart</name>
+    <telNumber>011 675 2399</telNumber>
+	<latitude>-26.098598</latitude>
+	<longitude>27.906542</longitude>
+	<address>Cnr Paul Kruger &amp; Morzat Str.Honeydew Ridge</address>
+</merchant>
+
+<merchant>
+    <name>Miami Cafe`</name>
+    <telNumber>011 672 4163</telNumber>
+	<latitude>-26.171555</latitude>
+	<longitude>27.90975</longitude>
+	<address>30 Goldman Street Florida</address>
+</merchant>
+
+<merchant>
+    <name>BP Flora Lake Service Station</name>
+    <telNumber>011 672 4797</telNumber>
+	<latitude>-26.1823</latitude>
+	<longitude>27.90884</longitude>
+	<address>No 6 Kathleen Street, Florida, 1710</address>
+</merchant>
+</feed>
