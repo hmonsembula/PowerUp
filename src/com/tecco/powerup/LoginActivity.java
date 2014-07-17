@@ -1,5 +1,6 @@
 package com.tecco.powerup;
 
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
@@ -16,8 +17,6 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.tecco.powerup.R;
 
 /**
  * Activity which displays a login screen to the user, offering registration as
@@ -233,7 +232,6 @@ public class LoginActivity extends Activity {
 			if (success) {
 				
 				Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
-				
 			
 				startActivity(mainActivity);
 				finish();
