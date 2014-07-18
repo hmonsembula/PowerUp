@@ -6,16 +6,17 @@
     <string name="hello_world">Hello world!</string>
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="drawer_close">Slider Menu Closed</string>
-    
+    <string name="selectAreaPrompt">Select Area</string>
+
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item >E-Vendors</item>
-        <item >E-Balance</item>
-        <item >Load Shedding Schedule</item>
-        <item >Feeds</item>
-        <item >Report a fault</item>
+        <item>E-Vendors</item>
+        <item>E-Balance</item>
+        <item>Load Shedding Schedule</item>
+        <item>Feeds</item>
+        <item>Report a fault</item>
     </string-array>
-    
+
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
@@ -25,16 +26,16 @@
         <item>@drawable/feed_icon</item>
         <item>@drawable/report_fault_icon</item>
     </array>
-    
+
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
-<!-- Spinner Start -->
+    <!-- Spinner Start -->
     <string name="add">Search</string>
     <string name="menu_settings">Settings</string>
     <string name="product_hint">Search here</string>
- <string name="department_store">Schedule by block &#8230;</string>
-  
- <string-array name="dept_array">
+    <string name="department_store">Schedule by block &#8230;</string>
+
+    <string-array name="dept_array">
         <item>Block 1</item>
         <item>Block 2</item>
         <item>Block 3</item>
@@ -43,7 +44,8 @@
         <item>Block 6</item>
         <item>Block 7</item>
     </string-array>
-     
- <color name="snow">#eee9e9</color>
- <!-- Spinner End -->
+
+    <color name="snow">#eee9e9</color>
+    <!-- Spinner End -->
+
 </resources>

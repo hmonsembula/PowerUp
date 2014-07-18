@@ -45,20 +45,16 @@ public class Vendors extends Activity {
 			merchantsXmlFile = getApplicationContext().getAssets().open(
 					"vendors.xml");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
 			merchants = (ArrayList<Merchant>) merchantParser
 					.parse(merchantsXmlFile);
 		} catch (XmlPullParserException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(
 				R.id.map)).getMap();
 

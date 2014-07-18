@@ -30,14 +30,14 @@
     </LinearLayout>
 
     <!-- Login form -->
-	<LinearLayout 
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="10dp"
-	    android:background="@drawable/top_bar"
-	    >
-	    
-	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
@@ -50,9 +50,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:layout_marginBottom="30dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="60dp"
                 android:text="LOGIN TO YOUR ACCOUNT" />
 
             <TextView
@@ -61,75 +61,78 @@
                 android:layout_gravity="left"
                 android:layout_marginBottom="2dp"
                 android:text="Username" />
+
             <EditText
                 android:id="@+id/email"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/username_textbox_only"
+                android:drawableLeft="@drawable/username_icon"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-               android:background="@drawable/username_textbox_only"
-                android:drawableLeft="@drawable/username_icon"
-                android:text="hmonsembula@gmail.com"
-                android:singleLine="true" />
-            
-            
-<TextView
+                android:singleLine="true"
+                android:text="hmonsembula@gmail.com" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="left"
                 android:layout_marginBottom="2dp"
                 android:layout_marginTop="15dp"
-                android:layout_gravity="left"
                 android:text="Password" />
+
             <EditText
                 android:id="@+id/password"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/username_textbox_only"
+                android:drawableLeft="@drawable/password_icon"
                 android:hint="@string/prompt_password"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
-                android:background="@drawable/username_textbox_only"
-                android:drawableLeft="@drawable/password_icon"
                 android:maxLines="1"
-                android:text="12345"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:text="12345" />
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               android:layout_marginTop="30dp"
-                 >
-                 <Button
-                android:id="@+id/register_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_weight="1"
-				android:layout_marginRight="10dp"
-				android:background="@drawable/register_button"
-				/>
-            <Button
-                android:id="@+id/sign_in_button"
-                android:layout_width="wrap_content"
-                android:layout_gravity="right"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/login_button"
-              />
-			
-            
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Register"
+                    android:textStyle="bold"
+                    android:background="@color/cyanButton_color" />
+
+                <Button
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Sign in"
+                    android:textStyle="bold"
+                    android:background="@color/yellowButton_color" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="30dp"
-                android:textSize="12sp"
                 android:layout_gravity="center"
-                android:text="Forgot username or password" />
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Forgot username or password"
+                android:textSize="12sp" />
         </LinearLayout>
     </ScrollView>
 

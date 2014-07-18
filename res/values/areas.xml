@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="area_items">
+        <item>Select Area</item>
+        <item>Alexandra</item>
+        <item>Atholl East</item>
+        <item>Ennerdale</item>
+        <item>Ennerdale Ext 1</item>
+        <item>Ennerdale Ext 2</item>
+        <item>Ennerdale Ext 3</item>
+        <item>Ennerdale Ext 4</item>
+        <item>Ennerdale Ext 5&amp;6</item>
+        <item>Hopefield</item>
+        <item>Lenasia Ext 1, 2, 4, 6</item>
+        <item>Braam Park</item>
+        <item>Hillbrow</item>
+        <item>Illovo West</item>
+        <item>Northriding</item>
+        <item>Olivedale</item>
+        <item>Parktown</item>
+        <item>Parktown North</item>
+        <item>Sundowner</item>
+        <item>Sundowner Ext</item>
+        <item>Upper Houghton</item>
+        <item>Allendale</item>
+        <item>BryanstonEast</item>
+        <item>BryanstonNorth</item>
+        <item>Diamension Data</item>
+        <item>Discovery</item>
+        <item>Honeydew</item>
+        <item>Kyalami Park</item>
+        <item>MTN Campus</item>
+        <item>Roodepoort CBD</item>
+        <item>Weltevreden Park</item>
+        <item>Aspen Hills</item>
+        <item>Athol West</item>
+        <item>Bassonia</item>
+        <item>Bramley Park</item>
+        <item>Corlett Gardens</item>
+        <item>Glenvista</item>
+        <item>Houghton</item>
+        <item>Kensington</item>
+        <item>Morningside</item>
+        <item>Springfield</item>
+        <item>Booysens</item>
+        <item>Booysens Reserve</item>
+        <item>Doornfontein</item>
+        <item>Ellis Park</item>
+        <item>Jeppe West</item>
+        <item>Johannesburg CBD</item>
+        <item>Johannesburg City &amp; Suburban</item>
+        <item>Nasrec</item>
+        <item>Ormonde</item>
+        <item>Troyville</item>
+        <item>Auckland Park</item>
+        <item>Braamfontein</item>
+        <item>Braamfontein Werf</item>
+        <item>Crown Mines</item>
+        <item>Fordsburg</item>
+        <item>Mayfair</item>
+        <item>Mil Park</item>
+        <item>Newtown</item>
+        <item>SABC</item>
+        <item>University of Johannesburg (RAU)</item>
+        <item>Eldorado Park</item>
+        <item>Florida</item>
+        <item>Kliptown</item>
+        <item>Lenasia Ext 3&#8211;13</item>
+        <item>Maraisburg</item>
+        <item>Northcliff</item>
+        <item>Rivasdale</item>
+        <item>Robertville</item>
+        <item>Sophiatown</item>
+        <item>Wesdene</item>
+        <item>Blairgowerie </item>
+        <item>Bryanston Manor</item>
+        <item>Bryanston South West</item>
+        <item>Craighall</item>
+        <item>Cresta</item>
+        <item>Greenside</item>
+        <item>Mongomery Park</item>
+        <item>Parkhurst</item>
+        <item>Roosevelt Park</item>
+        <item>Westcliff</item>
+    </string-array>
+
+</resources>

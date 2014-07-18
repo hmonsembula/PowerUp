@@ -6,4 +6,7 @@
     <color name="list_divider">#fff</color>
     <color name="counter_text_bg">#626262</color>
     <color name="counter_text_color">#c5c4c4</color>
+    <color name = "yellowButton_color">#e4e423</color>
+    <color name = "cyanButton_color">#24cfbd</color>
+    <color name = "balanceHeading_color">#515538</color>
 </resources>
