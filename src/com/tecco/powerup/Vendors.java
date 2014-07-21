@@ -26,7 +26,6 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Vendors extends Activity {
-
 	ArrayList<Marker> merchantMarkers = new ArrayList<Marker>();
 	ArrayList<Merchant> merchants = new ArrayList<Merchant>();
 	private double myLongitude;
