@@ -86,7 +86,7 @@ public class Notifications extends Fragment {
 
 			// lets write the results to the console as well
 			for (Tweet tweet : twits) {
-				Log.i(LOG_TAG, tweet.getText());
+				//Log.i(LOG_TAG, tweet.getText());
 			}
 			// send the tweets to the adapter for rendering
 			ArrayAdapter<Tweet> adapter = new ArrayAdapter<Tweet>(view.getContext(), R.layout.tweet_item, twits);

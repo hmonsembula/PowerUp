@@ -172,7 +172,7 @@ public class MainActivity extends Activity {
 
 		switch (position) {
 		case 0:
-			Intent intent = new Intent(this, Vendors.class);
+			Intent intent = new Intent(this, DisplayVendors.class);
 			startActivity(intent);
 		case 1:
 			fragment = new Balance();

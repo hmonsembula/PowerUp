@@ -36,7 +36,7 @@ public class MerchantXmlParser {
 				continue;
 			}
 			String tag = parser.getName();
-			// Starts by looking for the entry tag
+			// Starts by looking for the merchant tag
 			if (tag.equals("merchant")) {
 				merchants.add(readEntry(parser));
 			} else {
@@ -59,6 +59,8 @@ public class MerchantXmlParser {
 		double latitude = 0;
 		double longitude = 0;
 		String address = "";
+		String area = "";
+		String coordinates = "";
 		while (parser.next() != XmlPullParser.END_TAG) {
 			if (parser.getEventType() != XmlPullParser.START_TAG) {
 				continue;
@@ -74,6 +76,10 @@ public class MerchantXmlParser {
 				longitude = readLongitude(parser);
 			} else if (tag.equals("address")) {
 				address = readAddress(parser);
+			} else if (tag.equals("mCoordinates")) {
+				coordinates = readCoordinates(parser);
+			} else if (tag.equals("area")) {
+				area = readArea(parser);
 			} else {
 				skip(parser);
 			}
@@ -81,7 +87,26 @@ public class MerchantXmlParser {
 		return new Merchant(name, telNumber, latitude, longitude, address);
 	}
 
-	private String readAddress(XmlPullParser parser) throws XmlPullParserException, IOException {
+	private String readArea(XmlPullParser parser)
+			throws XmlPullParserException, IOException {
+
+		try {
+			parser.require(XmlPullParser.START_TAG, ns, "area");
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String address = readText(parser);
+
+		parser.require(XmlPullParser.END_TAG, ns, "area");
+		return address;
+	}
+
+	private String readAddress(XmlPullParser parser)
+			throws XmlPullParserException, IOException {
 
 		try {
 			parser.require(XmlPullParser.START_TAG, ns, "address");
@@ -99,7 +124,6 @@ public class MerchantXmlParser {
 	}
 
 	private void skip(XmlPullParser parser) {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -165,6 +189,30 @@ public class MerchantXmlParser {
 		String telNumber = readText(parser);
 		try {
 			parser.require(XmlPullParser.END_TAG, ns, "telNumber");
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return telNumber;
+	}
+
+	private String readCoordinates(XmlPullParser parser) {
+		// TODO Auto-generated method stub
+		try {
+			parser.require(XmlPullParser.START_TAG, ns, "mCoordinates");
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String telNumber = readText(parser);
+		try {
+			parser.require(XmlPullParser.END_TAG, ns, "mCoordinates");
 		} catch (XmlPullParserException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
